@@ -1,42 +1,57 @@
 @import '../styles/global.scss';
 
 .article-box {
-  margin-bottom: 30px;
-  border-bottom: 1px dotted $color-pallete-6;
-  display: inline-block;
-  width: $container-width;
+  display: flex;
   transition: all .25s ease;
-  box-shadow: inset 0 0 0 0 $color-pallete-4;
+  box-shadow: inset 0 0 0 0 var(--color-white);
+  margin-bottom: 30px;
+  padding: 1.2rem 0;
+  border-bottom: 2px dashed var(--color-accent);
+
+  @media only screen and (max-width: 53.4rem) {
+    flex-direction: column;
+  }
 
   &:hover {
     cursor: pointer;
 
     @media only screen and (min-width: 960px) {
-      box-shadow: inset $site-width 0 0 0 $color-pallete-7;
+      box-shadow: inset var(--site-width) 0 0 0 #ffe8df;
+    }
+  }  
+
+  &__img {
+    display: block;
+    border-radius: 50%;
+    max-height: 150px;
+    max-width: 150px;
+    border: 2px solid var(--color-accent);
+
+    @media only screen and (max-width: 53.4rem) {
+      max-height: 50rem;
+      max-width: 100%;
+      border-radius: 0;
     }
   }
 
-  .left {
-    float: left;
-    width: 150px;
-    height: 150px;
-    background-color: $color-pallete-5;
-  }
+  &__content {
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: var(--color-grey);
+    margin-top: -2rem;
 
-  .right {
-    margin-left: 150px;
-    padding: 15px;
-    color: $color-pallete-3;
-    margin-top: -20px;
+    @media only screen and (max-width: 53.4rem) {
+      margin: 2rem 0;
+    }
 
-    .date {
-      margin-top: -15px;
-      margin-bottom: 20px;
-      font-size: 12px;
+    &-date {
+      color: var(--color-grey-light);
+      margin: .5rem 0;
+      font-size: 1.6rem;
     }
 
     h3 {
-      color: $color-pallete-3;
+      color: var(--color-black);
     }
   }
 }

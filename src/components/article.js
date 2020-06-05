@@ -6,19 +6,21 @@ import styles from './article.module.scss';
 export default (props) => (
 
   <Link to={props.to}>
-    <article className={styles.articleBox} key={props.id}>
-      <div className={styles.left}>
-        <img src={`https://source.unsplash.com/150x150/?${props.keywords}`} alt={props.title}/>        
-      </div>
-      <div className={styles.right}>
+    <article className={styles.articleBox} key={props.id}>     
+      
+      <img className={styles.articleBox__img}
+      src={`https://source.unsplash.com/random?${props.keywords}`} 
+      alt={props.title}/>        
+      
+      <div className={styles.articleBox__content}>
         <h3>
           {props.title}
         </h3>
-        <div className={styles.date}>{props.date}</div>
-        <div>
+        <p className={styles.articleBox__contentDate}>{props.date}</p>
+        <p>
           {props.excerpt}      
-        </div>
-      </div>      
+        </p>
+      </div>
     </article>
   </Link>
 

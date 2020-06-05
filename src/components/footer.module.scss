@@ -1,21 +1,19 @@
-@import '../styles/global';
-
-$footer-height: 100px;
+@import '../styles/global.scss';
 
 .container {
-  background-color: $color-pallete-3;
-  width: $container-width;
-  height: $footer-height;
+  background-color: var(--color-black);
+  width: var(--container-width);
+  height: 10rem;
   position: absolute;
   bottom: 0;    
 
   .footer {
+    font-size: 1.6rem;
     margin: 0 auto;
-    max-width: $site-width;
-    height: $footer-height;
-    line-height: $footer-height;
-    color: $color-pallete-4;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0 20px;
+    max-width: var(--site-width);
+    height: 10rem;
+    line-height: 10rem;
+    color: var(--color-white);
+    padding: 0 2rem;
   }
 }

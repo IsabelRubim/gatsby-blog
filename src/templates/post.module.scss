@@ -6,7 +6,7 @@
     padding: 20px;
 
     h1 {
-      color: $color-pallete-3;
+      color: var(--color-black);
       margin-bottom: 30px;
       line-height: 50px;
     }
@@ -15,19 +15,19 @@
       margin-top: 30px;
       margin-bottom: 30px;
       line-height: 30px;
-      color: $color-pallete-9;
+      color: var(--color-grey);
     }
 
     h3 {
       margin-top: 30px;
       margin-bottom: 30px;
       line-height: 25px;
-      color: $color-pallete-9;
+      color: var(--color-grey);
     }
 
     p {
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 1.8rem;
       line-height: 30px;
       text-align: justify;
     }

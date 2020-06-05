@@ -1,42 +1,43 @@
 @import '../styles/global.scss';
 
 .container {
-  max-width: $site-width;
-  min-height: 140px;
+  max-width: var(--site-width);
+  min-height: 14rem;
   margin: 0 auto;
-  padding-top: 30px;
-  margin-top: 50px;
+  padding-top: 3rem;
+  margin-top: 5rem;
 
   .row {
     text-align: center;
-    padding: 5px;
+    padding: .5rem;
   }
 
   .button {
-    background-color: $color-pallete-1;
+    background-color: var(--color-accent);
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    border-radius: .3rem;
     color: white;
     font-weight: bold;
-    height: 30px;
-    min-width: 15px;
-    line-height: 30px;
-    padding-left: 10px;
-    margin-right: 10px;
-    padding-right: 10px;
-
-    margin-top: 10px;
-
+    height: 3rem;
+    min-width: 1.5rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    transition: background-color .2s;
+  
     &:hover {
-      background-color: $color-pallete-2;
+      background-color: var(--color-primary);
     }
   }
 
   .button-icon {
     @extend .button;
-    background-size: 16px 16px;
+    background-size: 1.6rem 1.6rem;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -49,7 +50,7 @@
   .button-twitter {
     @extend .button-icon;
     background-image: url('../images/twitter.png');
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .button-linkedin {
@@ -58,18 +59,19 @@
   }
 
   .link {
-    color: $color-pallete-1;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
+    color: var(--color-accent);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
     text-decoration: none;
+    transition: color .2s;
 
     &:hover {
-      color: $color-pallete-2;
+      color: var(--color-primary);
     }
 
     &:not(:last-child) {
-      padding-right: 30px;
+      padding-right: 3rem;
     }
   }
 }

@@ -1,11 +1,47 @@
-$container-width: 100%;
-$site-width: 960px;
-$color-pallete-1: #222f3e;
-$color-pallete-2: #0984e3;
-$color-pallete-3: #222f3e;
-$color-pallete-4: #ffffff;
-$color-pallete-5: #fafafa;
-$color-pallete-6: #777777;
-$color-pallete-7: #dfe6e9;
-$color-pallete-8: #000000;
-$color-pallete-9: #576574;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #ff1e56;
+  --color-accent: #ffac41;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-grey: #323232;
+  --color-grey-light: #b1b1b1;
+
+  --site-width: 96rem;
+  --container-width: 100%;
+}
+
+$bp-large: 68.75em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;  
+  
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;    
+  line-height: 1.6;
+}
