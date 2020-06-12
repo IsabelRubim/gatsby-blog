@@ -5,8 +5,8 @@ image: 'https://source.unsplash.com/150x150/'
 keywords: 'develop'
 ---
 
-## Olá,
+## Hello,
 
-**está é minha primeira interação com o Gatsby**, isto aqui é uma marcação para
-esta postagem que você está vendo no qual será convertido em HTML. Isso mostra o
-poder dos plugins que compõem o gatsby.
+**this is my first interaction with Gatsby**, this is a markup for this post
+that you are looking at which will be converted to HTML. This shows the power 
+of the plugins that make up gatsby.

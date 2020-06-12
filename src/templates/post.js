@@ -14,9 +14,10 @@ export default ({ data }) => {
         <Title text={post.frontmatter.title}></Title>
         <div style={{ 
           width: '100%', 
-          height: '200px', 
-          backgroundColor: '#fafafa', 
-          backgroundImage: `Url(https://source.unsplash.com/960x200/?${post.frontmatter.keywords})` }}>          
+          height: '200px',
+          maxWidth: '960px', 
+          backgroundColor: '#fafafa',
+          backgroundImage: `Url(https://source.unsplash.com/random?${post.frontmatter.keywords})`}}>          
         </div>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: post.html}}></div>
       </div>

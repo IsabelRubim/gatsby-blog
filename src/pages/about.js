@@ -1,19 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
+import styles from './about.module.scss';
 import Layout from '../components/layout';
 import Title from '../components/title';
 
 export default () => (
   <Layout>
-    <Title text='About me' />
-    <div>
-      <Link to="/">Home </Link> |   
-      <Link to="/about"> About me</Link>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor.
+    <Title text='About me' />    
+    <p className={styles.contentAbout}>
+      Hello, i am Isabel Rubim and i am having fun with gatsby.
     </p>
   </Layout>
 );
