@@ -10,6 +10,7 @@ A simple blog made with gatsbyjs, you can see [here](https://gatsbyblog-projeto.
 * [ReactJS](https://reactjs.org/)
 * [GraphQL](https://graphql.org/)
 * [SASS](https://sass-lang.com/documentation/syntax)
+* [Unsplash API](https://source.unsplash.com/)
 
 ## How to use this
 
